@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PostCard = ({ post }) => {
   const contenidoResumen =
     post.contenido.length > 1000
-      ? post.contenido.substring(0, 2000) + "..."
+      ? post.contenido.substring(0, 1500) + "..."
       : post.contenido;
 
   return (
