@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://backend-pasca.up.railway.app:4000",
+  baseURL:
+    process.env.REACT_APP_BACKEND_URL ||
+    "https://backend-pasca.up.railway.app/",
   headers: {
     "Content-Type": "application/json",
   },
