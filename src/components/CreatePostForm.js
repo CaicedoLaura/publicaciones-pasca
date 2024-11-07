@@ -36,23 +36,6 @@ const CreatePostForm = () => {
     }
   };
 
-  const handleEditorImageUpload = async (blobInfo, success, failure) => {
-    const formData = new FormData();
-    formData.append("imagen", blobInfo.blob());
-
-    try {
-      const response = await api.post("/api/posts/upload", formData, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "multipart/form-data",
-        },
-      });
-      success(response.data.imagenUrl);
-    } catch (error) {
-      failure("Error al subir la imagen");
-    }
-  };
-
   return (
     <div className="create-post-container">
       <div className="create-post-card">
