@@ -105,7 +105,7 @@ const CreatePostForm = () => {
               onEditorChange={(newContent) => setContenido(newContent)}
             />
           </div>
-          <div className="form-group desaparecer">
+          <div className="desaparecer">
             <label>Imagen Principal:</label>
             <input
               type="file"
