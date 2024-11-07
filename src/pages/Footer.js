@@ -29,8 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} Nombre del Sitio. Todos los derechos
-        reservados.
+        &copy; {new Date().getFullYear()} Pasca. Todos los derechos reservados.
       </div>
     </footer>
   );

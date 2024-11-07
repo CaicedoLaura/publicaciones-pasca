@@ -7,6 +7,7 @@ import { Editor } from "@tinymce/tinymce-react";
 const CreatePostForm = () => {
   const [titulo, setTitulo] = useState("");
   const [contenido, setContenido] = useState("");
+  const [imagen, setImagen] = useState(null);
   const [categoria, setCategoria] = useState("Información General");
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -22,6 +23,10 @@ const CreatePostForm = () => {
     formData.append("contenido", contenido);
     formData.append("categoria", categoria);
 
+    if (imagen) {
+      formData.append("imagen_url", imagen);
+    }
+
     try {
       const response = await api.post("/api/posts", formData, {
         headers: {
@@ -34,6 +39,10 @@ const CreatePostForm = () => {
     } catch (err) {
       setError(err.response?.data?.error || "Error al crear la publicación");
     }
+  };
+
+  const handleMainImageChange = (e) => {
+    setImagen(e.target.files[0]);
   };
 
   const handleEditorImageUpload = async (blobInfo, success, failure) => {
@@ -76,13 +85,13 @@ const CreatePostForm = () => {
                 height: 500,
                 menubar: true,
                 plugins: [
-                  "code advlist autolink link image lists charmap print preview anchor",
+                  "advlist autolink lists link image charmap print preview anchor",
                   "searchreplace visualblocks code fullscreen",
-                  "insertdatetime media table paste help wordcount",
+                  "insertdatetime media table paste code help wordcount",
                 ],
-                toolbar: `code | undo redo | formatselect | bold italic backcolor | 
-                  alignleft aligncenter alignright alignjustify | 
-                  bullist numlist outdent indent | removeformat | help`,
+                toolbar: `undo redo | formatselect | bold italic backcolor | \
+                  alignleft aligncenter alignright alignjustify | \
+                  bullist numlist outdent indent | removeformat | help | image`,
                 images_upload_handler: handleEditorImageUpload,
                 paste_data_images: true,
                 automatic_uploads: true,
@@ -94,6 +103,14 @@ const CreatePostForm = () => {
               }}
               value={contenido}
               onEditorChange={(newContent) => setContenido(newContent)}
+            />
+          </div>
+          <div className="form-group desaparecer">
+            <label>Imagen Principal:</label>
+            <input
+              type="file"
+              onChange={handleMainImageChange}
+              accept="image/*"
             />
           </div>
           <div className="form-group">
