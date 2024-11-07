@@ -36,6 +36,10 @@ const CreatePostForm = () => {
     }
   };
 
+  const handleMainImageChange = (e) => {
+    setImagen(e.target.files[0]);
+  };
+
   const handleEditorImageUpload = async (blobInfo, success, failure) => {
     const formData = new FormData();
     formData.append("imagen", blobInfo.blob());
@@ -83,9 +87,6 @@ const CreatePostForm = () => {
                 toolbar: `code | undo redo | formatselect | bold italic backcolor | 
                   alignleft aligncenter alignright alignjustify | 
                   bullist numlist outdent indent | removeformat | help`,
-                valid_elements: "*[*]",
-                extended_valid_elements:
-                  "iframe[src|width|height|frameborder|allowfullscreen|loading|referrerpolicy]",
                 images_upload_handler: handleEditorImageUpload,
                 paste_data_images: true,
                 automatic_uploads: true,
