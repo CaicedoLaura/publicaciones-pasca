@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import api from "../api.js";
 import { useDispatch } from "react-redux";
 import { login } from "../redux/authSlice";
 import { useNavigate } from "react-router-dom";
@@ -16,7 +16,7 @@ const LoginForm = () => {
     setError("");
 
     try {
-      const response = await axios.post("/api/auth/login", {
+      const response = await api.post("/api/auth/login", {
         usernameOrEmail,
         contraseña: password,
       });
