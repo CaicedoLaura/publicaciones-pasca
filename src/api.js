@@ -1,9 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL:
-    process.env.REACT_APP_BACKEND_URL ||
-    "https://backend-pasca.up.railway.app/",
+  baseURL: process.env.REACT_APP_BACKEND_URL || "http://localhost:4000",
   headers: {
     "Content-Type": "application/json",
   },
