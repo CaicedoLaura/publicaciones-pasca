@@ -1,0 +1,69 @@
+/* index.css */
+
+/* Variables globales de colores */
+/*
+:root {
+    --primary-color: #007B3E;
+    --secondary-color: #00482B;
+    --accent-color: #79C000;
+    --highlight-color: #DAAA00;
+    --button-color: #F7931E;
+    --text-color: #4d4d4d;
+    --background-color: #03944b;
+    --link-color: #00A99D;
+    --card-bg-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+:root {
+    --primary-color: #005691;
+    --secondary-color: #022f40;
+    --accent-color: #b08d57;
+    --highlight-color: #ffd700;
+    --button-color: #f1c40f;
+    --text-color: #333333;
+    --background-color: #006f72;
+    --link-color: #028090;
+    --card-bg-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@import './styles/Navbar.css';
+@import './styles/HomePage.css';
+@import './styles/CategoryFilter.css';
+@import './styles/PostCard.css';
+@import './styles/LoginForm.css';
+@import './styles/RegisterForm.css';
+@import './styles/Footer.css';
+@import './styles/CreatePostForm.css';
+@import './styles/PostView.css';

@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar {
+    position: relative;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 10px 15rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--highlight-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+    color: #DAAA00;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .navbar-links a {
+    color: var(--link-color);
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-links a:hover {
+    color: var(--highlight-color);
+}
+
+.navbar .nav-link {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+    color: #ffd700;
+    /* Color de hover si quieres que resalte */
+}
+
+.logout-link {
+    background: none;
+    border: none;
+    color: #a9c47f;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.logout-link:hover {
+    color: #ffd700;
+}

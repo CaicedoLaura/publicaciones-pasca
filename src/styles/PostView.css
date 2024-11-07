@@ -1,0 +1,122 @@
+/* Ajuste para evitar que el contenido quede debajo del navbar fijo */
+.post-view-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Título de la publicación */
+.post-view-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+/* Estilizar la categoría */
+.post-view-container p strong {
+    font-size: 1.2em;
+    color: var(--text-color);
+}
+
+/* Contenido del post */
+.post-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Imagen principal */
+.post-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Galería de imágenes */
+.post-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.post-gallery-image {
+    width: 48%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rating-section {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-rating p {
+    margin-top: 5px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Comentarios */
+.comments-section {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.comments-section h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Cuadro de texto de comentario */
+.add-comment textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Botón de enviar comentario */
+.add-comment button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.add-comment button:hover {
+    background-color: #e0a800;
+}
+
+/* Mensaje de comentarios */
+.no-posts-message,
+.no-comments-message {
+    color: #888;
+    text-align: center;
+    margin-top: 15px;
+    font-style: italic;
+}

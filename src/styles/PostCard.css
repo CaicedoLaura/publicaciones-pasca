@@ -1,0 +1,114 @@
+.post-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.comments-rating-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.comments-section,
+.rating-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.comments-toggle-button {
+    background-color: #ffb800;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.comments-list {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.add-comment {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-comment input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-comment button {
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-section {
+    text-align: center;
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.comments-toggle-button,
+.rating-section button {
+    background-color: #ffb800;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.comments-section h4,
+.rating-section h4 {
+    color: #ffb800;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    max-width: 400PX;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post-details {
+    text-align: left;
+    width: 100%;
+}
+
+.post-summary {
+    font-size: 14px;
+    color: #666;
+}
+
+.view-more-link {
+    color: var(--primary-color);
+    /* Ajusta el color a tu paleta */
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+/* Contenedor principal */
+.home-page {
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título */
+.home-page h2 {
+    font-size: 2em;
+    color: var(--highlight-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Estilo de las tarjetas de publicación */
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.post-card {
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Detalles dentro de la tarjeta */
+.post-card h2 {
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.post-card p {
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.view-more-link {
+    margin: 0 15px 15px;
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.view-more-link:hover {
+    text-decoration: underline;
+}
