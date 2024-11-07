@@ -8,14 +8,6 @@ const PostCard = ({ post }) => {
       : post.contenido;
 
   return (
-    <div className="post-card">
-      {post.imagen_url && (
-        <img
-          src={post.imagen_url}
-          alt="Imagen principal"
-          className="post-image"
-        />
-      )}
       <div className="post-details">
         <h2>{post.titulo}</h2>
         <p
