@@ -8,6 +8,7 @@ const PostCard = ({ post }) => {
       : post.contenido;
 
   return (
+    <div className="post-card">
       <div className="post-details">
         <h2>{post.titulo}</h2>
         <p
