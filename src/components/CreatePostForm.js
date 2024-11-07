@@ -36,10 +36,6 @@ const CreatePostForm = () => {
     }
   };
 
-  const handleMainImageChange = (e) => {
-    setImagen(e.target.files[0]);
-  };
-
   const handleEditorImageUpload = async (blobInfo, success, failure) => {
     const formData = new FormData();
     formData.append("imagen", blobInfo.blob());
