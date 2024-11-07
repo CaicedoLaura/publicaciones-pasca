@@ -66,7 +66,6 @@ const CreatePostForm = () => {
                 toolbar: `code | undo redo | formatselect | bold italic backcolor | 
                   alignleft aligncenter alignright alignjustify | 
                   bullist numlist outdent indent | removeformat | help`,
-                images_upload_handler: handleEditorImageUpload,
                 paste_data_images: true,
                 automatic_uploads: true,
                 file_picker_types: "image",
